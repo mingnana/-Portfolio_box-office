@@ -1,0 +1,388 @@
+a:link, a:visited{text-decoration:none; color:#000;}
+
+#wrap{min-width:1025px; width:100%; font-family: 'Nanum Gothic Coding', monospace;}
+
+/* 공통작업 */
+h3{text-align:center; padding-bottom:40px; font-size:21px; font-weight:700;}
+
+.btn{position:absolute; top:45%; transform: translatey(-50%); cursor:pointer;}
+.btn p{width:100%; height:100%;}
+.btn img{width:100%; }
+
+
+/* ######################  header  ###################### */
+#header{position:absolute; left:0; top:0; z-index:2;
+    background:linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);}
+h1{top:25%;}
+#mobile{width:90%; position:absolute; left:0; top:20px; padding:0 5%; display:none ; }
+#mobile:after{content:""; display:block; clear:both;}
+#mobile .menuBar{width:50px; margin-top:12px; float:left;}
+#mobile span{width:40px; height:5px; background-color:#fff; display:block; margin-bottom:5px; margin-left:3%;}
+#mobile .userArea{width:110px; float:right;}
+#mobile .userArea p{width:50px; display: inline-block; filter:invert();}
+#mobile .userArea img{width:100%;}
+
+/* ######################  container  ###################### */
+#container{width:100%;}
+
+/* ########### visual ########### */
+#visual{width:100%;  height:777px; overflow:hidden; }
+#visual .vis_inn{width:100%; height:100%; position:relative;}
+#visual .slider{width:100%; display: flex; transition: all 5s; position:absolute; top:0; left:0;}
+#visual .slider li{width:auto;}
+#visual div:after{content:""; display:block; width:100%; height:150px; position:absolute; left:0; bottom:0;
+    background:linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);}
+
+/* rank */
+#rank{width:100%; overflow:hidden; padding-bottom:70px; background-color:#000;}
+#rank_inn{width:1200px; margin:50px auto 0; position:relative;  }
+#rank_inn .btn{width:19px; height:37px;}
+#rank .prevRank{left:0;}
+#rank .nextRank{right:0;}
+
+/* 이미지 */
+#rank_ul_Area{width:1140px; margin:0 auto; overflow: hidden; }
+#rank_ul_Area ul{width: 5000px; height:100%; }
+#rank_ul_Area li{width:204px; height:100%; float:left; position:relative; color:#fff; margin-left:20px;}
+#rank_ul_Area .img img{width:100%; border-radius:5px;}
+/* 글 */
+#rank_ul .descArea{padding-top:10px; text-align:center; font-weight:700;}
+#rank_ul h2{font-size:13px; padding-bottom:5px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+#rank_ul .desc p{font-size:11px; display:inline-block;}
+#rank_ul .desc p:after{content:""; display:inline-block; height:10px; border-left:1px solid #b2b2b2; margin:0 10px;}
+#rank_ul .desc p:last-child:after{display:none;}
+#rank_ul .desc p:last-child img{vertical-align: -3px; margin-left:-10px;}
+.descArea em{display:block; position:absolute; left:10px; bottom:40px;
+    font-size:30px; font-style: italic;}
+#rank_ul .red{color:#f00;}
+
+
+/* 구매,정보 */
+#rank_ul .buy{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);display:none;}
+#rank_ul .buy p{width:148px; height:30px; line-height:30px; border-radius:5px; border:2px solid #fff; margin-bottom:5px;}
+#rank_ul .buy a{width:100%; height:100%; color:#fff; font-size:12px; display:block;}
+
+/* 기능 */
+#rank_inn li:hover .img img{opacity:0.3}
+#rank_inn li:hover .buy{display:block;}
+
+
+/* ########### service ########### */
+#service{width:100%;}
+#service_inn{width:875px; margin:50px auto 0;}
+#service_inn ul{width:100%;}
+#service_inn ul:after{content:""; display:block; clear:both;}
+#service_inn li{width:160px; height:160px;
+    margin-right:15px; text-align:center;  position:relative; float:left;}
+#service_inn li:nth-child(3) .text{padding-top:10px;}
+#service_inn .box{height:160px; background-color:#ddd; transform:scaley(1);
+    transition:transform 0.2s linear; }
+#service_inn .textArea{width:100%; position:absolute; left:0; top:50%; transform: translatey(-50%);}
+#service_inn .img{line-height:50px;}
+#service_inn .text{color:#000; font-weight:700; font-size:12px;}
+
+
+/* 기능 */
+#service_inn li:hover{cursor:pointer;}
+#service_inn li:hover .box{transform:scaley(1.2); background-color:#c00;  box-shadow:5px 5px 5px #aaa;}
+#service_inn li:hover .text{color:#fff;}
+
+
+/* ########### event ########### */
+#event{width:100%; padding:20px 0;}
+#event:after{content:""; display:block; clear:both;}
+#event_inn{width:980px; margin:30px auto;}
+#event_inn ul{width:100%;}
+#event_inn ul:after{content:""; display:block; clear:both;}
+#event_inn li{float:left; margin-right:10px; margin-bottom:10px; }
+#event_inn li a{width:100%; height:100%; display:block;}
+#event_inn .event3{float:right; margin:0;}
+#event_inn li img{width:100%; height:100%;}
+
+
+/* ########### special ########### */
+#special{width:100%; padding-bottom:70px; background-color:#f3f3f3;}
+#special_inn{width:1090px; margin:50px auto 0; padding-top:50px;}
+/* place */
+#place{width:100%; }
+#place ul{width:100%; }
+#place ul:after{content:""; display:block; clear:both;}
+#place li{width:130px; height:130px; line-height:150px; margin-right:30px; display:block;
+    transform:rotate(0deg); border-radius: 30px; transition:all 0.5s linear;
+    text-align:center; background-color:#fff; float:left;}
+#place li:last-child{margin-right:0;}
+/* 기능 */
+#place li:hover{background-color:#ccc; cursor: pointer; 
+    border-radius:80px; box-shadow: 0px 0px 10px #aaa;}
+/* curation */
+#curation{width:1025px; margin:50px auto 0; color:#333;}
+#curation:after{content:""; display:block; clear:both;}
+#curation img{border-radius:10px;}
+#curation .first{width:300px; float:left;}
+#curation a{width:100%;}
+#curation img{width:100%;}
+#curation .right{width:63%; margin-left:35px; float:left;}
+#curation .textArea{height:200px;
+    border-bottom:1px dotted #999;}
+#curation h4{font-size:30px; padding:10px 0; font-weight: 700;}
+#curation .desc{font-size:13px; line-height:20px;}
+#curation .desc strong{font-weight:700;}
+/* list */
+#curation .list{width:100%; padding-top:25px; }
+#curation ul{width:100%;}
+#curation li{width:140px; margin-left:20px; float:left;}
+#curation li:first-child{margin:0;}
+#curation li span{font-size:13px; font-weight:700;}
+
+/* ########### stage ########### */
+#stage{width:100%;}
+#stage h3{padding:50px 0;}
+#stage_inn{width:1110px; margin:0px auto; position:relative;}
+#stage_inn .btn{height:39px; top:50%;}
+#stage_inn .btn a{height:100%; display:block;}
+#stage .prevStage{left:0px;}
+#stage .nextStage{right:0px;}
+#stage_ul_Area{width:1000px; height:188px; margin:0 auto; overflow:hidden; }
+#stage_ul{width:5000px; margin:0 auto;}
+/* #stage_ul ul:after{content:""; display:block; clear:both;} */
+#stage_inn li{width:314px; height:184px; margin-right:15px; 
+    float:left; transition:border-color 0.5s; position:relative;}
+#stage_ul li img{width:100%;}
+#stage_ul li div{width:100%; height:100%}
+#stage_ul a{width:100%; height:100%; display:block;}
+#stage_ul li:last-child{margin:0;}
+
+
+/* 보더 */
+#stage_inn li:before{content:""; width:0px; height:4px;
+position:absolute; left:0; top:0; background-color:#c00;  transition:all 0.4s linear;}
+#stage_inn li:after{content:""; width:4px; height:0px;
+position:absolute; right:0; top:0px; background-color:#c00;  transition:all 0.4s linear;}
+#stage_inn li p:before{content:""; width:0px; height:4px;
+position:absolute; right:0; bottom:0; background-color:#c00;  transition:all 0.4s linear;}
+#stage_inn li p:after{content:""; width:4px; height:0px;
+position:absolute; left:0; bottom:0; background-color:#c00;  transition:all 0.4s linear;}
+
+/* 기능 */
+#stage_inn li:hover:before{width:100%;}
+#stage_inn li:hover:after{height:100%;}
+#stage_inn li p:hover:before{width:100%;}
+#stage_inn li p:hover:after{height:100%;}
+
+/*############### 태블릿 pc버전 #################*/
+@media all and (min-width:768px) and (max-width:1024px){
+
+    #wrap{min-width:748px;}
+    /*################### hader ###################*/
+
+    #header{min-width:748px; width:100%;}
+    #head_inn{width:748px; margin:30px auto 0; position:relative;}
+    h1{left:35%; top:-5%;}
+
+    /*######### visual #########*/
+    #visual{min-width:748px; width:100%; height:350px;}
+    #visual li img{width:100%;}
+    
+    /*######### rank #########*/
+    #rank_inn{width:748px;}
+    #rank_ul_Area{width:688px;}
+    #rank_ul .buy p{width:128px;}
+
+    /*######### service #########*/
+    #service_inn{width:725px;}
+    #service_inn ul{width:725px;}
+    #service_inn li{width:130px; height:130px; margin-bottom:15px;}
+    #service_inn .box{height:130px;}
+
+    /*######### event #########*/
+    #event{width:100%;}
+    #event_inn{width:748px;}
+    .event0, .event1, .event5{width:133px;}
+    .event2{width:222px; height:182px;}
+    .event3{width:225px; height:377px;}
+    .event4{width:365px; height:182px;}
+
+    /*######### special #########*/
+    #special_inn{width:748px;}
+    /* place */
+    #place li{width:89px; height:89px; line-height:105px; margin-right:20px;}
+    #place li img{width:80%;}
+    /* curation */
+    #curation{width:728px;}
+    #curation .first{width:200px;}
+    #curation h4{font-size:20px;}
+    #curation li{width:100px; margin-left:10px;}
+    #curation strong{padding:0;}
+    #curation .textArea{height:180px; }
+    #curation .desc{font-size:11px;}
+    #curation .list span{font-size:10px;}
+
+    /*######### stage #########*/
+    #stage_inn{width:748px;}
+    #stage_ul_Area{width:670px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:748px;}
+    #banner_inn{height:155px; }
+    #banner p{width:748px;}
+}
+
+/*############### 스마트폰 가로버전 #################*/
+@media all and (min-width:481px) and (max-width:767px){
+
+    #wrap{min-width:460px;}
+    /*################### hader ###################*/
+
+    #header{width:100%;}
+    #head_inn{width:100%; height:90px; position:relative; margin:0; background-color:#a00; }
+    #mobile{display:block;}
+    h1{left:47%; top:25px;  transform: translatex(-50%);}
+    h1 a{width:250px; }
+    #infoWrap, #gnb{display:none;}
+    
+    /*######### visual #########*/
+    #visual{min-width:460px; width:100%; height:270px; padding-top:90px;}
+    #visual li{width:100%;}
+    #visual li img{width:100%;}
+    
+    /*######### rank #########*/
+    #rank_inn{width:460px;}
+    #rank_ul_Area{width:380px;}
+    #rank_ul .buy p{width:108px;}
+    #rank_inn li{width:124px;}
+    #rank_inn h2{font-size:11px;}
+    #rank_inn .descArea{padding-top:20px;}
+    #rank_inn em{bottom:60px;}
+
+    /*######### service #########*/
+    #service_inn{width:450px;}
+    #service_inn li{width:140px; height:160px; margin-bottom:15px;}
+    #service_inn .box{height:160px;}
+    #service_inn .textArea{top:50%;}
+    #service_inn li:nth-child(3){margin-right:0;}
+    #service_inn li:nth-child(4){margin-left:15%;}
+    #service_inn li:hover{transform:scaley(0.9);}
+
+    /*######### event #########*/
+    #event{width:100%;}
+    #event_inn{width:420px;}
+    .event0, .event1{width:200px;}
+    .event2{width:409px;}
+    .event3, .event5{display:none;}
+    .event4{width:409px;}
+
+    /*######### special #########*/
+    #special_inn{width:460px; margin:0 auto;}
+    /* place */
+    #place li{width:100px; height:100px; line-height:120px; margin-right:10px; margin-bottom:10px;}
+    #place li img{width:80%;}
+    /* curation */
+    #curation{width:430px;}
+    #curation .first{width:400px;}
+    #curation .right{width:100%; margin:0; padding-top:20px;}
+    #curation h4{font-size:20px;}
+    #curation li{width:100px; margin-left:10px;}
+    #curation strong{padding:0;}
+    #curation .textArea{height:190px; }
+    #curation .desc{font-size:11px;}
+    #curation .list span{font-size:10px;}
+
+    /*######### stage #########*/
+    #stage_inn{width:460px;}
+    #stage_ul_Area{width:340px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:460px; padding-bottom:20px;}
+    #banner_inn{height:98px; }
+    #banner p{width:460px; bottom:0px;}
+    .f_logo{text-align: center;}
+    #footer_inn{width:100%;}
+    #f_gnb li{width:100%;}
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; border-right: none; display:block; }
+    #f_info{width:100%; text-align:center;}
+    #f_award ul{display:none;}
+    .hideinfo{display:none;}
+}
+
+/*############### 스마트폰 세로버전 #################*/
+@media all and (min-width:320px) and (max-width:480px){
+
+    #wrap{min-width:300px;}
+    /*################### hader ###################*/
+
+    #header{width:100%;}
+    #head_inn{width:100%; height:80px; position:relative; margin:0; background-color:#a00; }
+    #mobile{display:block; top:15px;}
+    #mobile .userArea{width:90px;}
+    #mobile .userArea p{width:40px; margin-top:5px;}
+    h1{left:47%; top:25px;  transform: translatex(-50%);}
+    h1 a{width:200px; }
+    #infoWrap, #gnb{display:none;}
+    
+    /*######### visual #########*/
+    #visual{min-width:300px; width:100%; height:200px; padding-top:80px;}
+    #visual li{width:100%;}
+    #visual li img{width:100%;}
+    
+    /*######### rank #########*/
+    #rank_inn{width:300px;}
+    #rank_ul_Area{width:220px;}
+    #rank_ul .buy p{width:78px;}
+    #rank_inn li{width:104px;}
+    #rank_inn h2{font-size:11px;}
+    #rank_inn .descArea{padding-top:20px;}
+    #rank_inn em{bottom:60px;}
+
+    /*######### service #########*/
+    #service_inn{width:275px;}
+    #service_inn li{width:130px; height:150px; margin-bottom:15px;}
+    #service_inn .box{height:150px;}
+    #service_inn .textArea{top:50%;}
+    #service_inn li:nth-child(2), #service_inn li:nth-child(4){margin-right:0;}
+    #service_inn li:nth-child(5){margin-left:25%;}
+    #service_inn li:hover{transform:scaley(0.9);}
+
+    /*######### event #########*/
+    #event{width:100%;}
+    #event_inn{width:300px; margin:0 auto;}
+    .event0, .event1{width:140px;}
+    .event2{width:290px;}
+    .event3, .event5{display:none;}
+    .event4{width:290px;}
+
+    /*######### special #########*/
+    #special_inn{width:300px; margin:0 auto;}
+    /* place */
+    #place li{width:65px; height:65px; line-height:80px; margin-right:10px; margin-bottom:10px;}
+    #place li img{width:80%;}
+    /* curation */
+    #curation{width:300px;}
+    #curation .first{width:100%;}
+    #curation .right{width:100%; margin:0; padding-top:20px;}
+    #curation h4{font-size:20px;}
+    #curation li{width:90px; margin-left:10px;}
+    #curation strong{padding:0;}
+    #curation .textArea{height:210px; }
+    #curation .desc{font-size:11px;}
+    #curation .list span{width:90px; font-size:10px; white-space: nowrap; text-overflow: ellipsis; overflow:hidden;
+    display:block; text-align:center;}
+    #curation li:last-child{display:none;}
+
+    /*######### stage #########*/
+    #stage_inn{width:300px;}
+    #stage_ul_Area{width:200px;  height:117px;}
+    #stage_inn li{width:200px; height:117px;}
+    /*################### footer ###################*/
+
+    #footer_inn{width:300px; padding-bottom:20px;}
+    #banner_inn{height:68px; }
+    #banner p{width:300px}
+    .f_logo{text-align: center;}
+    #footer_inn{width:100%;}
+    #f_gnb li{width:100%; border-right: none; }
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; display:block; }
+    #f_info{width:100%; text-align:center;}
+    #f_award ul{display:none;}
+    .hideinfo{display:none;}
+
+}

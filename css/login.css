@@ -1,0 +1,550 @@
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+#wrap {
+    min-width: 1025px;
+    width: 100%;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+/* ######################  header  ###################### */
+#header a {
+    color: #000;
+}
+
+#gnb li {
+    border-bottom: 2px solid #fff
+}
+
+#gnb {
+    border-bottom: 1px solid rgba(221, 219, 219, 0.7);
+}
+
+/* ########### infoWrap _ sns / info ###########*/
+#infoWrap {
+    border-bottom: 1px solid #656565;
+}
+
+#infoWrap li a {
+    color: #000;
+}
+
+/* ########### gnb ###########*/
+#gnb li ul {
+    width: 100%;
+    background-color: rgba(221, 219, 219, 0.7);
+}
+
+#gnb li li a {
+    color: #666;
+    transition: color 0.2s linear;
+    font-size: 11px;
+}
+
+#gnb li a {
+    font-size: 13px;
+    color: #000;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+/* ######################  container  ###################### */
+#container {
+    width: 100%;
+}
+
+/* ########### loginArea ###########*/
+#loginArea {
+    width: 1025px;
+    margin: 0px auto;
+    padding: 100px 0 50px;
+}
+
+#loginArea:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#loginArea ul {
+    width: 100%;
+    text-align: center;
+}
+
+#loginArea li {
+    width: 341px;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid #ccc;
+    transition: all 0.2s linear;
+    float: left;
+}
+
+#loginArea li:first-child {
+    border-bottom: 2px solid #333;
+}
+
+#loginArea li a {
+    width: 100%;
+    display: block;
+}
+
+/* ########### loginWrap ###########*/
+#loginWrap {
+    width: 100%;
+    height: auto;
+    padding: 34px 0;
+    background-color: #f5f5f5;
+}
+
+#login_mem {
+    width: 1025px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+legend {
+    display: none;
+}
+
+.banner {
+    width: 450px;
+    height: 220px;
+    margin-left: 65px;
+    float: left;
+}
+
+.banner p, .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.login_find_menu a {
+    color: #656565;
+}
+
+.login_find_menu span:before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin: 0 8px 0 5px;
+    border-left: 1px solid #959595;
+}
+
+.login_find_menu span:first-child:before {
+    display: none;
+}
+
+
+/* 회원 */
+/* 왼쪽_로그인 */
+#login_mem_Area {
+    width: 510px;
+    overflow: hidden;
+    float: left;
+}
+
+#login_mem_Area .desc {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#login_mem_Area form {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+#login_mem_Area input[title="user"] {
+    width: 385px;
+    height: 40px;
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login_mem_Area #userid {
+    margin-bottom: 10px;
+}
+
+#login_mem_Area #submit {
+    width: 110px;
+    height: 99px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #f00;
+    color: #fff;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* 로그인 아래 메뉴 */
+#login_find {
+    width: 100%;
+    overflow:hidden;
+    font-size: 12px;
+}
+#login_find .id_save{
+    padding-top: 11px;
+    float:left;
+}
+#login_find .login_find_menu {
+    padding-top: 15px;
+    float: right;
+}
+
+#login_find label {
+    vertical-align: 20%;
+}
+
+/* 미니배너 */
+#login_mem_Area .banner_mini {
+    width: 100%;
+    height: 26px;
+    position: relative;
+}
+
+#login_mem_Area .banner_mini p {
+    width: 181px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#login_mem_Area .banner_mini img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 오른쪽_큰 배너 */
+#login_mem .banner {
+    float: left;
+}
+
+/* 비회원 */
+#login_nonmem {
+    width: 1025px;
+    margin: 20px auto;
+}
+
+#login_nonmem p {
+    font-weight: 700
+}
+
+/* 상단 */
+#login_nonmem_Area {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#login_nonmem_Area form {
+    width: 100%;
+}
+
+#login_nonmem_Area ul {
+    width: 510px;
+    float: left;
+}
+
+#login_nonmem_Area li {
+    width: 100%;
+}
+
+#login_nonmem_Area ul label {
+    width: 180px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 500
+}
+
+#login_nonmem_Area ul label:after {
+    content: "*";
+    color: #e00;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+#login_nonmem_Area ul input {
+    width: 290px;
+    padding: 11px 0;
+    text-indent: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+#login_nonmem_Area ul select {
+    padding: 10px 16px;
+    border: 1px solid #aaa;
+}
+
+/* 하단 */
+#login_nonmem_Area .desc {
+    padding: 30px 0;
+    clear: both;
+    font-size: 13px;
+    text-align: center;
+}
+
+#login_nonmem_Area .terms {
+    width: 100%;
+}
+
+#login_nonmem_Area textarea {
+    width: 958px;
+    height: 133px;
+    padding: 21px 32px;
+}
+
+#radioArea {
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+#radioArea p {
+    display: inline-block;
+}
+
+#radioArea label {
+    vertical-align: 3px;
+    font-size: 14px;
+
+}
+
+#btnArea {
+    text-align: center;
+}
+
+#btnArea input {
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 3px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+#btnArea #sign {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+
+/* 소셜 */
+#login_social {
+    width: 1025px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+#login_social .social {
+    width: 510px;
+    padding-top: 50px;
+    float: left;
+}
+
+#login_social .social p {
+    padding: 15px 0;
+    margin-bottom: 15px;
+    text-indent: 70px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+#login_social .social .loginBtn:after {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    width: 43px;
+    height: 47px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    /* transform: translatey(-20%); */
+    margin-right: 10px;
+    border-right: 1px solid #ddd;
+}
+
+#login_social .social .naver:after {
+    background-image: url("../resource/img/login/social_naver.png");
+}
+
+#login_social .social .cacao:after {
+    background-image: url("../resource/img/login/social_cacao.png");
+}
+
+#login_social .login_find_menu {
+    width: 100%;
+    text-indent: 50px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+#login_nonmem {
+    display: none;
+}
+
+#login_social {
+    display: none;
+}
+/*############### 태블릿 pc버전 #################*/
+@media all and (min-width:768px) and (max-width:1024px){
+
+    #wrap{min-width:748px;}
+    /*################### hader ###################*/
+
+    #header{min-width:748px;}
+    #head_inn{width:748px;}
+
+    /*######### loginArea #########*/
+    #loginArea{width:748px; padding:50px 0 30px;}
+    #loginWrap{padding: 50px 0;  position: relative;}
+    #login_mem_Area .desc{position:absolute; left:50%; top:30px; transform: translatex(-50%);}
+    #loginArea li{width:249px;}
+    .banner{width: 305px; height:165px; margin-left: 35px; margin-top:20px;}
+    .banner p{width: 100%; height:100%;}
+    .banner p img{width:100%;}
+
+    /* login_mem */
+    #login_mem{width:748px; margin:0 auto;}
+    #login_mem_Area{width:408px; }
+    #login_mem_Area input[title="user"] {width: 285px; border-radius: 2px; text-indent: 5px;}
+
+    /* login_nonmem */
+    #login_nonmem{width:748px;}
+    #login_nonmem_Area ul {width: 408px}
+    #login_nonmem_Area ul label {font-size:13px; width: 135px;}
+    #login_nonmem_Area ul input {width: 220px; font-size: 11px;}
+    #login_nonmem_Area ul select {padding: 10px 6px;}
+    #login_nonmem_Area .desc{width:700px; line-height:20px; margin:0 auto;}
+    #login_nonmem_Area textarea {width: 684px; height: 133px; padding: 21px 32px;}
+
+    /* login_social */
+    #login_social {width: 748px;}
+    #login_social .social {width: 408px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:748px;}
+    #banner_inn{height:155px; }
+    #banner p{width:748px;}
+    .hideinfo{display:block;}
+
+}
+
+/*############### 스마트폰 가로버전 #################*/
+@media all and (min-width:481px) and (max-width:767px){
+
+    #wrap{min-width:460px;}
+
+    /*################### hader ###################*/
+    #header{min-width:460px;}
+    #head_inn{width:460px; padding-top:40px;}
+    
+    /*######### loginArea #########*/
+    #loginArea{width:460px; padding:50px 0 30px;}
+    #loginWrap{padding: 50px 0;  position: relative;}
+    #loginArea li{width:153px;}
+    .banner{margin:0; padding-top:30px;}
+
+    /* login_mem */
+    #login_mem{width:460px; margin:0 auto;}
+    #login_mem_Area{width:450px;}
+    #login_mem_Area input[title="user"] {width: 325px; border-radius: 2px; text-indent: 5px;}
+
+    /* login_nonmem */
+    #login_nonmem{width:460px;}
+    #login_nonmem_Area ul {width: 450px;}
+    #login_nonmem_Area ul label {font-size:13px; width: 135px;}
+    #login_nonmem_Area ul input {width: 280px; font-size: 13px;}
+    #login_nonmem_Area ul select {padding: 10px 16px;}
+    #login_nonmem_Area .desc{width:400px; line-height:20px;}
+    #login_nonmem_Area textarea {width: 394px; height: 133px; padding: 21px 32px;}
+    #btnArea {padding-top:20px;}
+    /* login_social */
+    #login_social {width: 460px;}
+    #login_social .social {width: 450px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:460px;}
+    #banner_inn{height:98px; }
+    #banner p{width:460px;}
+    .f_logo{text-align: center;}
+    #footer_inn{width:100%;}
+    #f_gnb li{width:100%; padding:0;}
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; border-right: none; display:block; }
+    #f_gnb .showinfo{padding-bottom:25px;}
+    #f_info{width:100%; text-align:center;}
+    #f_award ul{display:none;}
+    .hideinfo{display:none;}
+}
+
+/*############### 스마트폰 세로버전 #################*/
+@media all and (min-width:320px) and (max-width:480px){
+
+    #wrap{min-width:300px;}
+    #header{min-width:300px;}
+    #head_inn{width:300px; padding-top:40px; }
+    #infoWrap{width:100%; }
+    #infoWrap ul{clear:both; width:85%; display:block; padding-left:15%; }
+    
+    /*######### loginArea #########*/
+    #loginArea{width:300px; padding:70px 0 30px;}
+    #loginWrap{padding: 50px 0;  position: relative;}
+    #loginArea li{width:95px; font-size:14px;}
+    .banner{width:300px; height:150px; margin:0; padding-top:30px;}
+
+    /* login_mem */
+    #login_mem{width:300px; margin:0 auto;}
+    #login_mem_Area{width:300px; }
+    #login_mem_Area .desc{text-align: center; line-height: 20px;}
+    #login_mem_Area input[title="user"] {width: 300px; border-radius: 2px; text-indent: 5px;}
+    #login_mem_Area #submit {width: 300px; height:40px; position:static; margin-top:10px;  }
+    #login_find {width: 300px}
+
+    /* login_nonmem */
+    #login_nonmem{width:300px;}
+    #login_nonmem_Area ul {width: 300px;}
+    #login_nonmem_Area ul label {font-size:13px; width: 100%; text-align: left; margin-bottom:5px; margin-top:10px;}
+    #login_nonmem_Area ul input {width: 280px; font-size: 13px;}
+    #login_nonmem_Area ul select {padding: 10px 16px;}
+    #login_nonmem_Area .desc{width:280px; line-height:20px;}
+    #login_nonmem_Area textarea {width: 230px; height: 133px; padding: 21px 32px;}
+    #btnArea {padding-top:20px;}
+    #btnArea input{width:120px;}
+    /* login_social */
+    #login_social {width: 300px; font-size:14px;}
+    #login_social .social {width: 300px;}
+    #login_social .login_find_menu {text-indent: 0px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:300px; padding-bottom:20px;}
+    #banner_inn{height:66px; }
+    #banner p{width:300px;}
+    .f_logo{text-align: center;}
+    #footer_inn{width:100%;}
+    #f_gnb li{width:100%; padding:0;}
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; border-right: none; display:block; }
+    #f_gnb .showinfo{padding-bottom:35px;}
+    #f_info{width:100%; text-align:center;}
+    #f_award ul{display:none;}
+    .hideinfo{display:none;}
+
+
+}

@@ -1,0 +1,217 @@
+a:link, a:visited{text-decoration:none; color:#000;}
+
+#wrap{min-width:1025px; width:100%;  font-family: 'Nanum Gothic Coding', monospace;}
+
+/* ######################  header  ###################### */
+#header a{color:#000;}
+#gnb li{border-bottom:2px solid #fff}
+#gnb{border-bottom: 1px solid rgba(221, 219, 219, 0.7);}
+
+/* ########### infoWrap _ sns / info ###########*/
+#infoWrap{border-bottom:1px solid #656565;}
+#infoWrap li a{color:#000;}
+
+/* ########### gnb ###########*/
+#gnb li ul{width:100%; background-color:rgba(221, 219, 219, 0.7);}
+#gnb li li a{color:#666; transition: color 0.2s linear; font-size:11px;}
+#gnb li a{font-size:13px; color:#000; font-weight:700; padding:0 10px;}
+
+/* ######################  container  ###################### */
+#container{width:100%;}
+#cont_inn{width:1025px; margin:0 auto; padding-top:100px;}
+h3{margin-right:10px; font-size:17px; font-weight:700; padding-bottom:10px; display:inline-block; color:#000;}
+
+/* span, input 공통작업 */
+#cont_inn span{font-size:13px; color:#f00; font-weight:700; }
+
+/* ########### form ########### */
+#formArea{width:100%;}
+form{width:1025px; padding-bottom:40px; font-weight:700; color:#656565;}
+fieldset{width:100%;}
+legend{display:none;}
+form ul{width:100%; border-top:1px solid #333;}
+form li{width:100%; padding:17px 0; border-bottom:1px solid #ccc; text-indent:10px;}
+form .b_info label:before{content:"* "; color:#f00;}
+form .b_info li:last-child label:before{content:"";}
+form label{width:180px; float:left; display:block; line-height:32px; font-size:13px;}
+form input, select{width:300px; padding:8px 0; text-indent:10px; background-color:#eee;
+    color:#656565; border:none; font-size:12px;}
+form span:before{content:"*"; display:inline-block; clear:both; margin-right:3px;}
+form select{margin:0;}
+
+/* 아이디 */
+#id_check,#address_btn{padding:3px 10px; margin-left:5px;}
+
+/* 휴대폰 */
+#mKind, #mFirstNo, input[type="tel"]{width:100px;}
+
+/* 주소 */
+#postcode{width:150px;}
+#address0, #address1{width:450px; display:block; clear:both;
+    margin-left:190px; margin-top:7px;}
+
+/* 전체동의 폼 */
+form h3{padding:60px 0 10px;}
+#agreeAll{overflow:hidden; background-color:#eee; border: 1px solid #d7d5d5;}
+#agreeAll li{width:970px; padding:30px 20px;}
+#agreeAll li:first-child{height:30px; padding:10px 20px;}
+#agreeAll li:last-child{height:145px; border-bottom:0;}
+#agreeAll input[type="checkbox"]{width:13px; height:13px; float:left; display:block; margin-top:10px;}
+#agreeAll .chkAll_label{width:96%; float:left; text-indent: 5px; color:#353535;}
+#agreeAll .title{font-size:12px; color:#333;}
+#agreeAll .agree{width:100%; text-indent: 0;}
+#agreeAll .agree textarea{width:930px; height:90px; margin:10px 0; padding:0 20px; 
+    border:1px solid #ccc; color:#747474; font-size:12px;}
+#agreeAll .agree span{float:left; color:#222; font-size:12px;}
+#agreeAll .agree label{float:left; font-size:14px; height:14px; line-height:14px; text-indent: 0; font-size:12px;  color:#333;}
+#agreeAll .agree input[type="checkbox"]{margin-top:0; margin-left:10px;}
+
+#agreeAll .agree .chkArea::after{content:""; display:block; clear:both;}
+#agreeAll .agree .chkArea span{width:190px;}
+#agreeAll .chk_sns{padding-bottom:5px;}
+#agreeAll .chk_email{clear:both;}
+
+/* 버튼 */
+form .btn {text-align:center; padding-top:30px;}
+form .btn input, #submit{width:130px; line-height:20px; color:#fff; text-indent:0;
+    background-color:#f00; cursor:pointer; border:none;}
+#submit{padding:8px 0;}
+form .btn input:first-child{background-color:#333;}
+
+/*############### 태블릿 pc버전 #################*/
+@media all and (min-width:768px) and (max-width:1024px){
+
+    #wrap{min-width:748px;}
+    #header{min-width:748px;}
+    #head_inn{width:748px;}
+    h1{left:50%; transform: translatex(-50%);}
+    #cont_inn{width:748px;}
+
+    /* form */
+    form{width:748px;}
+    form label{width:140px;}
+    form input, select{width:250px;}
+    #address0, #address1{width:440px; margin-left:150px;}
+    #agreeAll li{width:708px;}
+    #agreeAll .agree textarea{width:668px;}
+}
+
+
+/*############### 스마트폰 가로버전 #################*/
+@media all and (min-width:481px) and (max-width:767px){
+
+    #wrap{min-width:460px; }
+    #header{min-width:460px;}
+    #head_inn{width:460px; padding-top:40px;}
+    #cont_inn{width:460px; padding-top:50px;}
+
+    /* form */
+    form{width:460px; }
+    form label{width:100%; font-size:15px;}
+    form .b_info input, select{width:350px; clear:both; font-size:15px;}
+    form .b_info input[type="tel"]{width:100px;}
+    form .red{width:100%; display:block; padding-top:10px;}
+    #address0, #address1{width:440px; margin-left:10px;}
+    #agreeAll{width:460px;}
+    #agreeAll li{width:460px;}
+    #agreeAll .chkAll_label{width:400px;}
+    #agreeAll li:first-child{padding-bottom:40px;}
+    #agreeAll .agree textarea{width:380px;}
+    #agreeAll .agree label{width:100px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:460px;}
+    #banner_inn{height:98px; }
+    #banner p{width:460px;}
+    .f_logo{text-align: center;}
+    #footer_inn{width:100%;}
+    #f_gnb li{width:100%;}
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; border-right: none; display:block; }
+    #f_info{width:100%; text-align:center;}
+    #f_award ul{display:none;}
+    .hideinfo{display:none;}
+}
+
+/*############### 스마트폰 가로버전 #################*/
+@media all and (min-width:481px) and (max-width:767px){
+
+    #wrap{min-width:460px; }
+    #header{min-width:460px;}
+    #head_inn{width:460px; padding-top:40px;}
+    #cont_inn{width:460px; padding-top:50px;}
+
+    /* form */
+    form{width:460px; }
+    form label{width:100%; font-size:15px;}
+    form .b_info input, select{width:350px; clear:both; font-size:15px;}
+    form .b_info input[type="tel"]{width:100px;}
+    form .red{width:100%; display:block; padding-top:10px;}
+    #address0, #address1{width:440px; margin-left:10px;}
+    #agreeAll{width:460px; margin-top:10px;}
+    #agreeAll li{width:460px;}
+    #agreeAll .chkAll_label{width:400px;}
+    #agreeAll li:first-child{padding-bottom:40px; }
+    #agreeAll li:first-child label{font-size:13px;}
+    #agreeAll .agree textarea{width:380px;}
+    #agreeAll .agree label{width:100px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:460px;}
+    #banner_inn{height:98px; }
+    #banner p{width:460px;}
+    .f_logo{text-align: center;}
+    #footer_inn{width:100%;}
+    #f_gnb li{width:100%; padding:0;}
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; border-right: none; display:block; }
+    #f_gnb .showinfo{padding-bottom:35px;}
+    #f_info{width:100%; text-align:center;}
+    #f_award ul{display:none;}
+    .hideinfo{display:none;}
+}
+
+/*############### 스마트폰 세로버전 #################*/
+@media all and (min-width:320px) and (max-width:480px){
+
+    #wrap{min-width:300px; }
+    #header{min-width:300px;}
+    #head_inn{width:300px; padding-top:40px;}
+    #cont_inn{width:300px; padding-top:50px;}
+    #infoWrap{width:100%; }
+    #infoWrap ul{clear:both; width:85%; display:block; padding-left:15%; }
+
+    /* form */
+    form{width:300px;}
+    form ul{width:300px; }
+    form label{width:100%; font-size:15px;}
+    form .b_info input, select{width:280px; clear:both; font-size:13px;}
+    form .b_info input[id="uid"]{width:200px;}
+    form .b_info input[type="tel"], #mKind, #mFirstNo{width:60px;}
+    form .red{width:100%; display:block; padding-top:10px;}
+    #address0, #address1{width:280px; margin-left:10px;}
+    form h3{padding:40px 0 10px}
+    #agreeAll{width:300px; margin-top:10px;}
+    #agreeAll li{width:300px;}
+    #agreeAll .chkAll_label{width:240px; line-height:20px; text-indent: 0; margin-left:5px;}
+    #agreeAll li:first-child{padding-bottom:20px; }
+    #agreeAll li:first-child label{font-size:13px;}
+    #agreeAll li:nth-child(3){padding-bottom:40px;}
+    #agreeAll li:nth-child(3) span{width:100%; padding-bottom:5px;}
+    #agreeAll li:nth-child(3) #chk1{margin-left:0;}
+    #agreeAll li:nth-child(4) p[class="title"]{width:260px;}
+    #agreeAll .agree textarea{width:220px; font-size:12px;}
+    #agreeAll .agree label{width:50px;}
+
+    /*################### footer ###################*/
+    #footer_inn{width:300px; padding-bottom:20px;}
+    #banner_inn{height:66px; }
+    #banner p{width:300px;}
+    .f_logo{text-align: center;}
+    #footer_inn{width:100%;}
+    #f_gnb li{width:100%; padding:0;}
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; border-right: none; display:block; }
+    #f_gnb .showinfo{padding-bottom:35px;}
+    #f_info{width:100%; text-align:center;}
+    #f_award ul{display:none;}
+    .hideinfo{display:none;}
+
+}
