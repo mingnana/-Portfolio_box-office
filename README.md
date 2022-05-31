@@ -1,8 +1,4 @@
-# Portfolio_box-office
-***
 # [Box Office](https://mingnana.github.io/Portfolio_box-office/mainPage.html)
-
-
 
 
 #### 1. 프로젝트 소개
