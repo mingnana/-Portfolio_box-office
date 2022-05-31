@@ -63,12 +63,6 @@
 <img src="https://user-images.githubusercontent.com/96216178/171082068-0fc6826a-b59f-4de8-8691-8a70e2c2141f.gif">
 
 ```md
-* 모두 동의하는 체크박스
-  모두 동의한다는 체크박스 or 문구 클릭시 모든 체크박스에 체크표시
-```
-<img src="https://user-images.githubusercontent.com/96216178/171082068-0fc6826a-b59f-4de8-8691-8a70e2c2141f.gif">
-
-```md
 * 반응형 웹페이지 
   pc(1024px), 태블릿pc(768px), 모바일 가로(480px), 모바일 세로(320px)의 4가지 해상도에 따라 ui 등이 유동적으로 변할수있도록 미디어 쿼리로 작성하여 반응형으로 제작
 ```
