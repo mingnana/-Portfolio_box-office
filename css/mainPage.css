@@ -74,6 +74,7 @@ h1{top:25%;}
 #service_inn ul:after{content:""; display:block; clear:both;}
 #service_inn li{width:160px; height:160px;
     margin-right:15px; text-align:center;  position:relative; float:left;}
+#service_inn li:last-child{margin-right:0;}
 #service_inn li:nth-child(3) .text{padding-top:10px;}
 #service_inn .box{height:160px; background-color:#ddd; transform:scaley(1);
     transition:transform 0.2s linear; }
@@ -177,7 +178,7 @@ position:absolute; left:0; bottom:0; background-color:#c00;  transition:all 0.4s
 
     #header{min-width:748px; width:100%;}
     #head_inn{width:748px; margin:30px auto 0; position:relative;}
-    h1{left:35%; top:-5%;}
+    h1{top:-5%;}
 
     /*######### visual #########*/
     #visual{min-width:748px; width:100%; height:350px;}
@@ -189,8 +190,8 @@ position:absolute; left:0; bottom:0; background-color:#c00;  transition:all 0.4s
     #rank_ul .buy p{width:128px;}
 
     /*######### service #########*/
-    #service_inn{width:725px;}
-    #service_inn ul{width:725px;}
+    #service_inn{width:710px;}
+    #service_inn ul{width:100%;}
     #service_inn li{width:130px; height:130px; margin-bottom:15px;}
     #service_inn .box{height:130px;}
 
@@ -294,14 +295,15 @@ position:absolute; left:0; bottom:0; background-color:#c00;  transition:all 0.4s
     /*################### footer ###################*/
     #footer_inn{width:460px; padding-bottom:20px;}
     #banner_inn{height:98px; }
-    #banner p{width:460px; bottom:0px;}
+    #banner p{width:460px; bottom:3px;}
     .f_logo{text-align: center;}
     #footer_inn{width:100%;}
-    #f_gnb li{width:100%;}
-    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; border-right: none; display:block; }
+    #f_gnb li{width:100%; padding-left:0;}
+    #f_gnb li a{width:100%; text-align:center; padding:10px 0; background-color:#f4f4f4; border-bottom:1px solid #aaa; display:block; }
     #f_info{width:100%; text-align:center;}
     #f_award ul{display:none;}
     .hideinfo{display:none;}
+    #f_gnb .showinfo p, #f_gnb .showinfo address{border-right: 1px solid #aaa;}
 }
 
 /*############### 스마트폰 세로버전 #################*/
@@ -384,5 +386,6 @@ position:absolute; left:0; bottom:0; background-color:#c00;  transition:all 0.4s
     #f_info{width:100%; text-align:center;}
     #f_award ul{display:none;}
     .hideinfo{display:none;}
+    #f_gnb .showinfo p, #f_gnb .showinfo address{border-right: 1px solid #aaa;}
 
 }
