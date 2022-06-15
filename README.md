@@ -21,7 +21,7 @@
   - Visual Studio Code
 ```
 
-#### 3. 프로젝트 url
+#### 4. 프로젝트 url
 
 1) [mainPage](https://mingnana.github.io/Portfolio_box-office/mainPage.html)
 2) [로그인](https://mingnana.github.io/Portfolio_box-office/login.html)
@@ -75,7 +75,7 @@
 ```
 --------
 
-#### 5. 프로젝트 Review
+#### 6. 프로젝트 Review
 
 ```md
  1) 미디어쿼리를 학습하면서 유연한 ui 개발의 필요성에 대해 알게되었고, 반응형에 대한 이해도를 높였음
